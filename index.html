@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- CSS: FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- CSS: MY CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS: JQUERY -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JS: MOMENT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <!-- JS: HANDLEBARS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js" charset="utf-8"></script>
+    <!-- JS: MY TEMPLATE -->
+    <script id="template" type="text/x-handlebars-template">
+      <option value="{{ name }}">
+    </script>
+    <!-- JS: CHART -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <!-- JS: MY JS -->
+    <script type="text/javascript" src="script.js"></script>
+  </head
+
+  <body>
+    <div class="container">
+      <div class="inputs">
+        <input class="name" list="names" placeholder="name">
+        <datalist id="names"></datalist>
+
+        <input class="amount" type="text" placeholder="amount">
+
+        <select class="date">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        <select class="month">
+          <option value="gennaio">gennaio</option>
+          <option value="febbraio">febbraio</option>
+          <option value="marzo">marzo</option>
+          <option value="aprile">aprile</option>
+          <option value="maggio">maggio</option>
+          <option value="giugno">giugno</option>
+          <option value="luglio">luglio</option>
+          <option value="agosto">agosto</option>
+          <option value="settembre">settembre</option>
+          <option value="ottobre">ottobre</option>
+          <option value="novembre">novembre</option>
+          <option value="dicembre">dicembre</option>
+        </select>
+        <select class="year">
+          <option value="2017">2017</option>
+        </select>
+
+        <button id="btn" type="button">add</button>
+      </div>
+
+      <div class="canvas-container">
+        <canvas id="myChart1"></canvas>
+      </div>
+      <div class="canvas-container">
+        <canvas id="myChart2"></canvas>
+      </div>
+      <div class="canvas-container">
+        <canvas id="myChart3"></canvas>
+      </div>
+    </div>
+  </body>
+</html>
